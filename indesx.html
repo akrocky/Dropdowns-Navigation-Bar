@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdows navigation bar</title>
+    <style>
+        nav ul {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+            list-style-type: none;
+
+        }
+
+        nav ul li a {
+            color: cornsilk;
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px 12px;
+            text-transform: capitalize;
+
+        }
+
+        nav ul li a:hover {
+            background-color: lightslategrey;
+
+        }
+
+
+
+        .drop-cont a {
+            color: black;
+            display: block;
+
+
+
+        }
+
+        .drop-cont a:hover {
+            background-color: burlywood;
+        }
+
+        .drop-cont {
+            background-color: rgba(245, 245, 235, 0.87);
+            box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.4);
+            position: absolute;
+            min-width: 200px;
+            display: none;
+        }
+
+
+        .navigation:hover .drop-cont {
+            display: block;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li class="navigation"><a class="navbar" href="">blog</a>
+                    <div class="drop-cont">
+                        <a href="">education</a>
+                        <a href="">sport</a>
+                        <a href="">entertainment</a>
+                    </div>
+                </li>
+                <li><a href="">our client</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>
